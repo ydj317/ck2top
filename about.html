@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)about.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <meta name="naver-site-verification" content="a553def94b6e7512916d4966d2bac9f1ac29791e">
+    <meta name="description" content="托普沃德是B2B中继平台一站式电商，4PL，全球解决方案企业。">
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="托普沃德">
+    <meta property="og:description" content="托普沃德是B2B中继平台一站式电商，4PL，全球解决方案企业。">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>托普沃德</title>
+    <script src="assets/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/include.js"></script>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+    <header id="header" class="header nav-down">
+    <div class="header-inner inner-big">
+        <div class="logo-main" onclick="location.href=&#39;index.html&#39;">
+            <img src="assets/images/logo.png">
+        </div>
+        <div class="menu">
+            <ul class="menu-container">
+                <li class="menu-item activce">
+                    <a href="about.html">关于我们</a>
+                </li>
+                <li class="menu-item">
+                    <a href="business.html">主要业务</a>
+                </li>
+                <li class="menu-item">
+                    <a href="contact.html">联系我们</a>
+                </li>
+                <li class="menu-item" onclick="contactWrap()">
+                    <a>客户支持</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-link-container">
+            <div class="lang-menu">
+                <div class="lang-selected">
+                    <img src="assets/images/earth_icon_b.png">
+                    <span>CN</span>
+                </div>
+                <ul class="lang-container">
+                    <li class="lang-item">
+                        <span>CN</span>
+                    </li>
+                    <li class="lang-item">
+                        <span>KR</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactBt" onclick="contactWrap()">免费咨询</div>
+            <div class="burger-menu">
+                <span class="b-line"></span>
+                <span class="b-line"></span>
+                <span class="b-line"></span>
+            </div>
+        </div>
+    </div>
+    <div id="modal-wrap" class="modal-wrap">
+        <div class="modal-content-wrap">
+            <div class="modal-inner">
+                <div class="modal-title-wrap">
+                    <div class="modal-title">
+                        <p>咨询</p>
+                    </div>
+                    <div id="modal-close" class="modal-close" onclick="modalClose()">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <form action="" class="modal-content">
+                    <div>
+                        <label for="customerName">姓名</label>
+                        <input type="text" id="customerName" class="valiList" name="customerName" required="" minlength="2" placeholder="姓名">
+                    </div>
+                    <div>
+                        <label for="phone">联系电话</label>
+                        <input type="text" id="phone" class="valiList" required="" pattern="[0-9]{3}[\-][0-9]{4}[\-][0-9]{4}" placeholder="联系电话">
+                    </div>
+                    <div>
+                        <label for="customerCompany">公司名</label>
+                        <input type="text" id="customerCompany" class="valiList" required="" placeholder="公司名">
+                    </div>
+                    <div>
+                        <label for="customerEmail">电子邮箱</label>
+                        <input type="email" id="customerEmail" class="valiList" required="" placeholder="电子邮箱">
+                    </div>
+                    <div>
+                        <label for="inquiryTitle">产品类目</label>
+                        <input type="text" id="inquiryTitle" class="valiList" required="" placeholder="产品类目">
+                    </div>
+                    <div>
+                        <label for="inquiryText">简单说明</label>
+                        <textarea type="text" id="inquiryText" class="valiList" required="" placeholder="简单说明" onkeyup="counter(this, 200)"></textarea>
+                        <div id="reCount">
+                            <span id="count-text">0 / 200</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="result-bt" onclick="goWriteInquiry()">
+                    免费咨询
+                </div>
+            </div>
+        </div>
+</div></header>
+
+    <main>
+        <section id="bi-main" class="bi-main">
+            <div class="bi-inner inner-big">
+                <div class="txt-box">
+                    <h3 class="txt">全球化思考 本地化运营</h3>
+                    <p>品牌力塑造 / 多元化布局 / 精细化运营</p>
+                    <p class="consultBtn" onclick="contactWrap()">方案咨询</p>
+                </div>
+                <div class="img-box">
+                    <img src="assets/images/one_stop_shop_bg.png">
+                </div>
+            </div>
+        </section>
+
+        <!-- section02 -->
+        <section class="section02">
+            <div class="inner-small">
+                <div class="text-wrap">
+                    <p class="main-title">
+                        托普沃德致力于帮助商户建立并发展<br>
+                        韩国电商业务提供一站式解决方案
+                    </p>
+                    <p class="sub-title">托普沃德是一家在极速变化的电子商务环境中迅速发展的企业<br>
+                        我们利用总部的IT研究所开发的B2B中继平台，推动一站式电子商务平台<br>
+                        作为连接中国和韩国的内容提供商，我们提供涵盖制造、策划、进出口、分销等所有环节的全球解决方案
+                    </p>
+                </div>
+                <ul class="CounterWrap">
+                    <li>
+                        <strong>3000<span>+</span></strong>
+                        <span>合作伙伴</span>
+                    </li>
+                    <li>
+                        <strong>31,172,163<span>+</span></strong>
+                        <span>累计出货</span>
+                    </li>
+                    <li>
+                        <strong>120,110<span>+</span></strong>
+                        <span>SKU</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- section02 end -->
+
+        <!-- section03 -->
+        <section class="section03 serviceWrap">
+            <div class="inner-small">
+                <div class="text-wrap">
+                    <p class="main-title">企业文化</p>
+                </div>
+                <div class="service-inner">
+                    <div class="service-icon"> 
+                        <img src="assets/images/company_icon_01.png">
+                        <p>企业使命</p>
+                        <p>用我们的技术和服务帮助商户 建立并发展海外线上业务</p>
+                    </div>
+                    <div class="service-icon">
+                        <img src="assets/images/company_icon_02.png">
+                        <p>企业愿景</p>
+                        <p>成为中韩电商最有价值的服务平台 专业, 活力, 值得信赖的企业</p>
+                    </div>
+                    <div class="service-icon">
+                        <img src="assets/images/company_icon_03.png">
+                        <p>经营理念</p>
+                        <p>以诚信拓市场, 以管理求效益 以财务为中心 以经营为龙头</p>
+                    </div>
+                    <div class="service-icon">
+                        <img src="assets/images/company_icon_04.png">
+                        <p>顾客至上</p>
+                        <p>从顾客的角度思考并提供所需的价值 责任, 坦诚, 创新, 共赢</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section03 end -->
+
+        <!-- section04 -->
+        <section class="section04">
+            <div class="text-wrap">
+                <p class="main-title">发展历程</p>
+            </div>
+            <!-- swiper -->
+            <div class="swiper mySwiper inner-small swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-76104679d01d11f9b" aria-live="polite" style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(152.5px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 7" style="width: 285px; margin-right: 20px;">
+                        <h3>2022</h3>
+                        <div class="devInfo">
+                            <span class="imgWrap">
+                                <img src="assets/images/development_path_image_01.png" alt="development_path_image_01">
+                            </span>
+                            <p>研发 PC-PDA 一站式平台<br> 制造, 策划, 进出口, 贸易, 物流仓储</p>
+                        </div>
+                    </div>
+                    <!-- 2022 -->
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 7" style="width: 285px; margin-right: 20px;">
+                        <h3>2021</h3>
+                        <div class="devInfo">
+                            <span class="imgWrap">
+                                <img src="assets/images/development_path_image_02.png" alt="development_path_image_02">
+                            </span>
+                            <p>成立仁川综合物流公司</p>
+                        </div>
+                    </div>
+                    <!-- 2021 -->
+                    <div class="swiper-slide" role="group" aria-label="3 / 7" style="width: 285px; margin-right: 20px;">
+                        <h3>2020</h3>
+                        <div class="devInfo">
+                            <span class="imgWrap">
+                                <img src="assets/images/development_path_image_03.png" alt="development_path_image_03">
+                            </span>
+                            <p>入驻 Coupang火箭仓<br>50,000 SKU</p>
+                        </div>
+                    </div>
+                    <!-- 2020 -->
+                    <div class="swiper-slide" role="group" aria-label="4 / 7" style="width: 285px; margin-right: 20px;">
+                        <h3>2019</h3>
+                        <div class="devInfo">
+                            <span class="imgWrap">
+                                <img src="assets/images/development_path_image_04.png" alt="development_path_image_04">
+                            </span>
+                            <p>成立中国义乌分公司</p>
+                        </div>
+                    </div>
+                    <!-- 2019 -->
+                    <div class="swiper-slide" role="group" aria-label="5 / 7" style="width: 285px; margin-right: 20px;">
+                        <h3>2018</h3>
+                        <div class="devInfo">
+                            <span class="imgWrap">
+                                <img src="assets/images/development_path_image_05.png" alt="development_path_image_04">
+                            </span>
+                            <p>成立中国义乌分公司</p>
+                        </div>
+                    </div>
+                    <!-- 2018 -->
+                    <div class="swiper-slide" role="group" aria-label="6 / 7" style="width: 285px; margin-right: 20px;">
+                        <h3>2017</h3>
+                        <div class="devInfo">
+                            <span class="imgWrap">
+                                <img src="assets/images/development_path_image_04.png" alt="development_path_image_04">
+                            </span>
+                            <p>中国(威海, 义乌, 广州) 分公司成立</p>
+                        </div>
+                    </div>
+                    <!-- 2017 -->
+                    <div class="swiper-slide" role="group" aria-label="7 / 7" style="width: 285px; margin-right: 20px;">
+                        <h3>2016</h3>
+                        <div class="devInfo">
+                            <span class="imgWrap">
+                                <img src="assets/images/development_path_image_06.png" alt="development_path_image_04">
+                            </span>
+                            <p>Connet Korea成立</p>
+                        </div>
+                    </div>
+                    <!-- 2016 -->
+                </div>
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-76104679d01d11f9b" aria-disabled="false"></div>
+                <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-76104679d01d11f9b" aria-disabled="true"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </section>
+        <!-- section04 end -->
+
+        <!-- section05 -->
+        <section class="section05">
+            <div class="text-wrap">
+                <p class="main-title">企业荣誉</p>
+            </div>
+            <div class="inner-small">
+                <ul class="achiContent">
+                    <li>
+                        <img src="assets/images/achi01.jpg" alt="achi01">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi02.jpg" alt="achi02">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi03.jpg" alt="achi03">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi04.jpg" alt="achi04">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi05.jpg" alt="achi05">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi06.jpg" alt="achi06">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi07.jpg" alt="achi07">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi08.jpg" alt="achi08">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi09.jpg" alt="achi09">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi10.jpg" alt="achi10">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi11.jpg" alt="achi11">
+                    </li>
+                    <li>
+                        <img src="assets/images/achi12.jpg" alt="achi12">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- section05 end -->
+
+        <section class="partnerWrap">
+            <div class="inner-small">
+                <div class="text-wrap">
+                    <p class="main-title">合作伙伴</p>
+                </div>
+                <div class="partner-inner">
+                    <ul class="partner-logo">
+                        <li>
+                            <img src="assets/images/partner_01.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_02.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_03.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_04.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_05.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_06.png">
+                        </li>
+                    </ul>
+                    <ul class="partner-logo">
+                        <li>
+                            <img src="assets/images/partner_07.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_08.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_09.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_10.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_11.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_12.png">
+                        </li>
+                    </ul>
+                    <ul class="partner-logo">
+                        <li>
+                            <img src="assets/images/partner_13.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_14.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_15.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_16.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_17.png">
+                        </li>
+                        <li>
+                            <img src="assets/images/partner_18.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- section07 -->
+        <section class="section07">
+            <div class="inner-small">
+                <div class="text-wrap">
+                    <p class="main-title">公司地址</p>
+                </div>
+                <div class="addressWrap">
+                    <div class="WrapInner">
+                        <h3>韩国总部</h3>
+                        <div class="txtWrap">
+                            <p>品牌合作:****@****.***</p>
+                            <p>韩国热线:+82-***-****-****</p>
+                            <p>地址:*********</p>
+                        </div>
+                    </div>
+                    <div class="WrapInner">
+                        <h3>广州分公司</h3>
+                        <div class="txtWrap">
+                            <p>电话:***-****-****</p>
+                            <p>地址:*********</p>
+                        </div>
+                    </div>
+                    <div class="WrapInner">
+                        <h3>义乌分公司</h3>
+                        <div class="txtWrap">
+                            <p>电话:***-****-****</p>
+                            <p>地址:*********</p>
+                        </div>
+                    </div>
+                    <div class="WrapInner">
+                        <h3>威海分公司</h3>
+                        <div class="txtWrap">
+                            <p>电话:***-****-****</p>
+                            <p>地址:*********</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section07 end -->
+    </main>
+    <footer id="footer" class="footer">
+    <div class="footer-content inner-big">
+        <div class="footer-directory">
+            <div class="footer-directory-column">
+                <h5>关于我们</h5>
+                <p>托普沃德是一家在极速变化的电子商务环境中迅速发展的企业</p>
+                <p>我们利用总部的IT研究所开发的B2B中继平台，推动一站式电子商务平台</p>
+                <p>作为连接中国和韩国的内容提供商，我们提供涵盖制造、策划、进出口、分销等所有环节的全球解决方案</p>
+            </div>
+            <div class="footer-directory-column">
+                <h5>公司地址</h5>
+                <p>韩国总部：*********</p>
+                <p>广州：*********</p>
+                <p>威海：*********</p>
+                <p>义乌：*********</p>
+            </div>
+            <div class="footer-directory-column">
+                <h5>联系我们</h5>
+                <p>品牌合作：****@****.***</p>
+                <p>韩国热线：+82-***-****-****</p>
+                <p>服务时间：周一至周五 09:00-18:30</p>
+                <img src="assets/images/logo.png">
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="assets/js/header.js"></script>
+    
+    <!-- swiper js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            centeredSlides: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                425: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1200:{
+                    slidesPerView: 4,
+                    spaceBetween: 120,
+                }
+            }
+        });
+    </script>
+
+
+</body></html>
