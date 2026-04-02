@@ -20,46 +20,46 @@ app.use(express.static(path.join(__dirname, 'assets')));
 
 // 라우트 설정
 app.get('/', (req, res) => {
-  res.render('index', { 
+  res.render('index', {
     title: '托普沃德',
     page: 'home',
     activeMenu: 'home',
-    extraCSS: ['/css/main.css']
+    extraCSS: ['/css/main.css'],
   });
 });
 
 app.get('/about', (req, res) => {
-  res.render('about', { 
+  res.render('about', {
     title: '关于我们 - 托普沃德',
     page: 'about',
     activeMenu: 'about',
-    extraCSS: ['/css/about.css']
+    extraCSS: ['/css/about.css'],
   });
 });
 
 app.get('/business', (req, res) => {
-  res.render('business', { 
+  res.render('business', {
     title: '主要业务 - 托普沃德',
     page: 'business',
     activeMenu: 'business',
-    extraCSS: ['/css/business.css']
+    extraCSS: ['/css/business.css'],
   });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', { 
+  res.render('contact', {
     title: '联系我们 - 托普沃德',
     page: 'contact',
     activeMenu: 'contact',
-    extraCSS: ['/css/contact.css']
+    extraCSS: ['/css/contact.css'],
   });
 });
 
 // 404 페이지
 app.use((req, res) => {
-  res.status(404).render('404', { 
+  res.status(404).render('404', {
     title: '页面未找到 - 托普沃德',
-    page: '404'
+    page: '404',
   });
 });
 

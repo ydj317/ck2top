@@ -1,200 +1,213 @@
 @charset "utf-8";
 
-*, body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Microsoft YaHei UI', 'Microsoft JhengHei UI', 'apple sd gothic neo', sans-serif
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    'Microsoft YaHei UI', 'Microsoft JhengHei UI', 'apple sd gothic neo',
+    sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, strong, .main-title{
-    font-family:'Microsoft YaHei UI', 'Microsoft JhengHei UI', 'apple sd gothic neo', sans-serif
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+.main-title {
+  font-family:
+    'Microsoft YaHei UI', 'Microsoft JhengHei UI', 'apple sd gothic neo',
+    sans-serif;
 }
 
-button, input[type=button], input[type=submit]{
-    background-color: transparent;
-    border: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
+button,
+input[type='button'],
+input[type='submit'] {
+  background-color: transparent;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-.consultBtn{
-    display: inline-block;
-    padding: 10px 25px;
-    font-size: 1.25rem;
-    color: #fff;
-    background-color: #3b9d52;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+.consultBtn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #3b9d52;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.consultBtn:hover{
-    background-color: #2d7a41;
+.consultBtn:hover {
+  background-color: #2d7a41;
 }
 
 .box {
-    padding: 100px;
-    margin: 100px;
+  padding: 100px;
+  margin: 100px;
 }
 
-
-form.was-validated input:invalid{
-    border-color: #000000;
+form.was-validated input:invalid {
+  border-color: #000000;
 }
 
 /* 스크롤바 설정*/
-body::-webkit-scrollbar{
-width: 10px;
+body::-webkit-scrollbar {
+  width: 10px;
 }
 
 /* 스크롤바 막대 설정*/
-body::-webkit-scrollbar-thumb{
-background-color: rgba(0,0,0,0.2);
-/* 스크롤바 둥글게 설정    */
-border-radius: 10px; 
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* 스크롤바 둥글게 설정    */
+  border-radius: 10px;
 }
 
 /* 스크롤바 뒷 배경 설정*/
-body::-webkit-scrollbar-track{
-background-color: rgba(0,0,0,0);
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
 @media (max-width: 575px) {
-    /* 공통 스타일 */
-    .wrap{
-        width: 100%;
-        padding: 6.25rem;
-    }
-    .inner-small{
-        max-width: 80%;
-        margin: auto;
-    }
-    .inner-big{
-        max-width: 90%;
-        margin: auto;
-    }
-    .text-wrap{
-        width: 90%;
-        margin: 0 auto 50px;
-        text-align: center;
-    }
-    .main-title{
-        font-size: 1.75rem;
-        font-weight: bold;
-        color: #3b9d52;
-        text-align: center;
-    }
-    .sub-title{
-        font-size: 1rem;
-        color: #000;
-        text-align: center;
-    }
-} 
+  /* 공통 스타일 */
+  .wrap {
+    width: 100%;
+    padding: 6.25rem;
+  }
+  .inner-small {
+    max-width: 80%;
+    margin: auto;
+  }
+  .inner-big {
+    max-width: 90%;
+    margin: auto;
+  }
+  .text-wrap {
+    width: 90%;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  .main-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #3b9d52;
+    text-align: center;
+  }
+  .sub-title {
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+  }
+}
 
 /* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 768px 보다 작은 화면에 적용)  */
 @media (min-width: 576px) and (max-width: 1024px) {
-    /* 공통 스타일 */
-    .wrap{
-        width: 100%;
-        padding: 6.25rem;
-    }
-    .inner-small{
-        max-width: 80%;
-        margin: auto;
-    }
-    .inner-big{
-        max-width: 90%;
-        margin: auto;
-    }
-    .text-wrap{
-        width: 90%;
-        margin: 0 auto 50px;
-        text-align: center;
-    }
-    .main-title{
-        font-size: 1.75rem;
-        font-weight: bold;
-        color: #3b9d52;
-        text-align: center;
-    }
-    .sub-title{
-        font-size: 1rem;
-        color: #000;
-        text-align: center;
-    }
+  /* 공통 스타일 */
+  .wrap {
+    width: 100%;
+    padding: 6.25rem;
+  }
+  .inner-small {
+    max-width: 80%;
+    margin: auto;
+  }
+  .inner-big {
+    max-width: 90%;
+    margin: auto;
+  }
+  .text-wrap {
+    width: 90%;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  .main-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #3b9d52;
+    text-align: center;
+  }
+  .sub-title {
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+  }
 }
 
 /* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
 @media (min-width: 1025px) and (max-width: 1920px) {
-    /* 공통 스타일 */
-    .wrap{
-        width: 100%;
-        padding: 6.25rem;
-    }
-    .inner-small{
-        max-width: 80%;
-        margin: auto;
-    }
-    .inner-big{
-        max-width: 90%;
-        margin: auto;
-    }
-    .text-wrap{
-        width: 100%;
-        margin-bottom: 100px;
-        text-align: center;
-    }
-    .main-title{
-        font-size: 2.25rem;
-        font-weight: bold;
-        color: #3b9d52;
-    }
-    .sub-title{
-        font-size: 1.125rem;
-        color: #000;
-    }
+  /* 공통 스타일 */
+  .wrap {
+    width: 100%;
+    padding: 6.25rem;
+  }
+  .inner-small {
+    max-width: 80%;
+    margin: auto;
+  }
+  .inner-big {
+    max-width: 90%;
+    margin: auto;
+  }
+  .text-wrap {
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .main-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #3b9d52;
+  }
+  .sub-title {
+    font-size: 1.125rem;
+    color: #000;
+  }
 }
 
 /* 1920이 넘는 해상도 */
 @media (min-width: 1921px) {
-    /* 공통 스타일 */
-    .wrap{
-        width: 100%;
-        padding: 6.25rem;
-    }
-    .inner-small{
-        max-width: 80%;
-        margin: auto;
-    }
-    .inner-big{
-        max-width: 90%;
-        margin: auto;
-    }
-    .text-wrap{
-        width: 100%;
-        margin-bottom: 100px;
-        text-align: center;
-    }
-    .main-title{
-        font-size: 2.25rem;
-        font-weight: bold;
-        color: #3b9d52;
-    }
-    .sub-title{
-        font-size: 1.125rem;
-        color: #000;
-    }
+  /* 공통 스타일 */
+  .wrap {
+    width: 100%;
+    padding: 6.25rem;
+  }
+  .inner-small {
+    max-width: 80%;
+    margin: auto;
+  }
+  .inner-big {
+    max-width: 90%;
+    margin: auto;
+  }
+  .text-wrap {
+    width: 100%;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  .main-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #3b9d52;
+  }
+  .sub-title {
+    font-size: 1.125rem;
+    color: #000;
+  }
 }
