@@ -1,17 +1,17 @@
-<header id="header" class="header nav-down <%= activeMenu === 'home' ? 'active' : '' %>">
+<header id="header" class="header nav-down <%= typeof activeMenu !== 'undefined' && activeMenu === 'home' ? 'active' : '' %>">
     <div class="header-inner inner-big">
         <div class="logo-main" onclick="location.href='/'">
             <img src="/images/logo.png">
         </div>
         <div class="menu">
             <ul class="menu-container">
-                <li class="menu-item <%= activeMenu === 'about' ? 'activce' : '' %>">
+                <li class="menu-item <%= typeof activeMenu !== 'undefined' && activeMenu === 'about' ? 'activce' : '' %>">
                     <a href="/about">关于我们</a>
                 </li>
-                <li class="menu-item <%= activeMenu === 'business' ? 'activce' : '' %>">
+                <li class="menu-item <%= typeof activeMenu !== 'undefined' && activeMenu === 'business' ? 'activce' : '' %>">
                     <a href="/business">主要业务</a>
                 </li>
-                <li class="menu-item <%= activeMenu === 'contact' ? 'activce' : '' %>">
+                <li class="menu-item <%= typeof activeMenu !== 'undefined' && activeMenu === 'contact' ? 'activce' : '' %>">
                     <a href="/contact">联系我们</a>
                 </li>
                 <li class="menu-item" onclick="contactWrap()">
