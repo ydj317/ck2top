@@ -1,0 +1,154 @@
+<section id="bi-main" class="bi-main">
+    <div class="bi-inner inner-big">
+        <div class="txt-box">
+            <h3 class="txt">全球化思考 本地化运营</h3>
+            <p>品牌力塑造 / 多元化布局 / 精细化运营</p>
+            <p class="consultBtn" onclick="contactWrap()">方案咨询</p>
+        </div>
+        <div class="img-box">
+            <img src="/images/contact_img.png">
+        </div>
+    </div>
+</section>
+
+<!-- section02 -->
+<section class="section02">
+    <div class="text-wrap">
+        <p class="main-title">联系我们</p>
+        <p class="sub-title">如果您对加入我们或我们如何为您提供服务存有<br>任何疑问，欢迎致电我们</p>
+    </div>
+</section>
+<!-- section02 end -->
+<!-- section03 -->
+<section class="section03">
+    <div class="container">
+        <div class="addWrap">
+                <div class="addInner active">
+                    <h2>托普沃德 总部</h2>
+                    <div class="infoWrap">
+                        <p>地址：*********</p>
+                        <p>电话：+82-***-****-**** 周一至周五 09:00-18:30</p>
+                        <p>邮箱：****@****.***</p>
+                    </div>
+                </div>
+                <div class="addInner">
+                    <h2>研究开发中心</h2>
+                    <div class="infoWrap">
+                        <p>地址：*********</p>
+                        <p>电话：+82-***-****-**** 周一至周五 09:00-18:30</p>
+                        <p>邮箱：****@****.***</p>
+                    </div>
+                </div>
+                <div class="addInner">
+                    <h2>物流中心</h2>
+                    <div class="infoWrap">
+                        <p>地址：*********</p>
+                        <p>电话：+82-***-****-**** 周一至周五 09:00-18:30</p>
+                        <p>邮箱：****@****.***</p>
+                    </div>
+                </div>
+        </div>
+        <ul class="tab-inner">
+            <li class="tab-link active" data-tab="tab-1">
+                <span class="tabImg active">
+                    <img src="/images/map_pin_icon.png" alt="map_pin_icon">
+                </span>
+                托普沃德总部
+            </li>
+            <li class="tab-link" data-tab="tab-2">
+                <span class="tabImg">
+                    <img src="/images/map_pin_icon.png" alt="map_pin_icon">
+                </span>
+                研究开发中心</li>
+            <li class="tab-link" data-tab="tab-3">
+                <span class="tabImg">
+                    <img src="/images/map_pin_icon.png" alt="map_pin_icon">
+                </span>
+                物流中心</li>
+        </ul>
+        <div id="tab-1" class="tab-content active">
+            <div class="map-placeholder">
+                <div class="map-info">
+                    <h3>托普沃德总部</h3>
+                    <p>电话：***-****-****</p>
+                    <p>地址：*********</p>
+                </div>
+            </div>
+        </div>
+        <div id="tab-2" class="tab-content">
+            <div class="map-placeholder">
+                <div class="map-info">
+                    <h3>研究开发中心</h3>
+                    <p>电话：***-****-****</p>
+                    <p>地址：*********</p>
+                </div>
+            </div>
+        </div>
+        <div id="tab-3" class="tab-content">
+            <div class="map-placeholder">
+                <div class="map-info">
+                    <h3>物流中心</h3>
+                    <p>电话：***-****-****</p>
+                    <p>地址：*********</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="storesWrap">
+        <ul>
+            <li>
+                <h3>威海分公司</h3>
+                <div>
+                    <p>电话：***-****-****<br>
+                        地址：*********
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h3>广州分公司</h3>
+                <div>
+                    <p>电话：***-****-****<br>
+                        地址：*********
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h3>义乌分公司</h3>
+                <div>
+                    <p>电话：***-****-****<br>
+                        地址：*********
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h3>义乌分公司</h3>
+                <div>
+                    <p>电话：***-****-****<br>
+                        地址：*********
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- section03 end -->
+
+<script>
+    $(document).ready(function(){
+        $('.tab-link').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('.tab-link').removeClass('active');
+            $('.tab-content').removeClass('active');
+            $('.tabImg').removeClass('active')
+            $('.addInner').removeClass('active');
+
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+            $(this).children('.tabImg').addClass('active')
+            
+            var idx = $(this).index();
+            $('.addInner').eq(idx).addClass('active');
+        });
+    });
+</script>

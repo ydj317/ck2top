@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <%- include('partials/head') %>
+    <% if (typeof extraCSS !== 'undefined') { %>
+        <% extraCSS.forEach(function(css) { %>
+            <link rel="stylesheet" href="<%= css %>">
+        <% }); %>
+    <% } %>
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main class="main">
+        <%- body %>
+    </main>
+    
+    <%- include('partials/footer') %>
+    
+    <script src="/js/swiper-bundle.min.js"></script>
+    <% if (typeof extraJS !== 'undefined') { %>
+        <% extraJS.forEach(function(js) { %>
+            <script src="<%= js %>"></script>
+        <% }); %>
+    <% } %>
+</body>
+</html>
